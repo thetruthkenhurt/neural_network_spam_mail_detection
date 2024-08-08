@@ -1,0 +1,10 @@
+# virtual environment
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+test_env/
+eda-test.ipynb
+.ipynb_checkpoints/
+calls.db
