@@ -1,6 +1,8 @@
 # config.py
 # Configuration for database connectivity 
 
+import os 
+
 # Database Path Configuration:
 # Please update the DB_PATH with the absolute path to your 'calls.db' database file on your local system.
 # This path is used by the Python scripts to connect to the SQLite database.
@@ -11,7 +13,7 @@
 # For Unix/Linux or macOS, use a regular string:
 # DB_PATH = '/path/to/calls.db'
 #please place the path of your calls.db file on your local machine here
-DB_PATH = r'C:\Users\Ken\Documents\AISG Assessment\AIAP 17 Assessment\calls.db'
+DB_PATH = r'yourpath'
 
 #if using public data(spambase.data from UCSI)
-PUBLIC_DATA_PATH = r'C:\Users\Ken\Documents\Code Projects\Spam Mail Classification\spambase\spambase.data'
+PUBLIC_DATA_PATH = os.path.join(os.path.dirname(__file__), '../spambase/spambase.data')
